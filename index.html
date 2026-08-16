@@ -14,6 +14,7 @@
 <body>
 
 <div class="grain"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
 
 <header class="site-header" id="top">
   <div class="wrap header-inner">
@@ -38,24 +39,42 @@
 <main>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-glow" aria-hidden="true"></div>
+  <section class="hero" id="heroSection">
+    <div class="hero-glow" aria-hidden="true" id="heroGlow"></div>
+    <div class="blob blob-gold" data-parallax="0.06" style="top:8%; left:6%; width:220px; height:220px;"></div>
+    <div class="blob blob-blossom" data-parallax="0.1" style="bottom:6%; left:14%; width:180px; height:180px;"></div>
     <div class="wrap hero-inner">
-      <p class="eyebrow reveal">The Family Calling</p>
-      <h1 class="hero-title reveal">CLANOR</h1>
-      <p class="hero-sub reveal">Mission, Vision &amp; Mandate</p>
-      <blockquote class="hero-quote reveal">
-        &ldquo;He who has a why to live for can bear almost any how.&rdquo;
-        <span>The family line does not drift into greatness. It is led there, by those who carry the why.</span>
-      </blockquote>
-      <div class="hero-scroll reveal">
-        <a href="#who" class="btn btn-primary">Enter the Calling</a>
+      <div class="hero-copy">
+        <p class="eyebrow reveal">The Family Calling</p>
+        <h1 class="hero-title reveal">CLANOR</h1>
+        <p class="hero-sub reveal">Mission, Vision &amp; Mandate</p>
+        <blockquote class="hero-quote reveal">
+          &ldquo;He who has a why to live for can bear almost any how.&rdquo;
+          <span>The family line does not drift into greatness. It is led there, by those who carry the why.</span>
+        </blockquote>
+        <div class="hero-scroll reveal">
+          <a href="#who" class="btn btn-primary"><span>Enter the Calling</span></a>
+        </div>
+      </div>
+      <div class="hero-portrait reveal" id="heroPortrait">
+        <div class="hero-portrait-ring" aria-hidden="true"></div>
+        <div class="hero-portrait-frame">
+          <img src="assets/images/founder-portrait.jpg" alt="Portrait of the carrier of the CLANOR family calling" width="704" height="840" loading="eager">
+        </div>
+        <div class="bubble-cluster bubble-cluster-1" aria-hidden="true">
+          <i class="b-gold"></i><i class="b-orange"></i><i class="b-pink"></i><i class="b-blossom"></i><i class="b-meadow"></i>
+        </div>
+        <div class="bubble-cluster bubble-cluster-2" aria-hidden="true">
+          <i class="b-pink"></i><i class="b-gold"></i><i class="b-orange"></i>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- WHO WE ARE -->
   <section class="section section-light" id="who">
+    <div class="blob blob-blossom" data-parallax="0.05" style="top:-8%; right:8%; width:260px; height:260px;"></div>
+    <div class="blob blob-meadow" data-parallax="0.08" style="bottom:-10%; left:2%; width:200px; height:200px;"></div>
     <div class="wrap">
       <p class="kicker reveal">Who We Are</p>
       <h2 class="section-title reveal">Stewards of a family line</h2>
@@ -69,12 +88,14 @@
 
   <!-- VISION -->
   <section class="section section-dark" id="vision">
+    <div class="blob blob-orange" data-parallax="0.07" style="top:4%; right:10%; width:260px; height:260px;"></div>
+    <div class="blob blob-pink" data-parallax="0.1" style="bottom:2%; left:4%; width:220px; height:220px;"></div>
     <div class="wrap">
       <p class="kicker kicker-light reveal">The Vision</p>
       <h2 class="section-title title-light reveal">What we are building toward</h2>
       <p class="section-intro reveal">The picture of what the family line looks like fully expressed.</p>
 
-      <ul class="check-list reveal">
+      <ul class="check-list reveal stagger">
         <li>Every person knows their God given identity before they know the world&rsquo;s opinion of them</li>
         <li>Every marriage is a covenant of purpose, not just companionship: two people warring together for the Kingdom</li>
         <li>Every young person enters dating and courtship with wholeness, wisdom and discernment rather than wounds and desperation</li>
@@ -91,6 +112,8 @@
 
   <!-- MISSION -->
   <section class="section section-light" id="mission">
+    <div class="blob blob-gold" data-parallax="0.06" style="top:-6%; left:10%; width:220px; height:220px;"></div>
+    <div class="blob blob-blossom" data-parallax="0.09" style="bottom:-8%; right:6%; width:240px; height:240px;"></div>
     <div class="wrap">
       <p class="kicker reveal">The Mission</p>
       <h2 class="section-title reveal">What we are called to do</h2>
@@ -102,7 +125,7 @@
       </div>
 
       <p class="reveal" style="font-weight:700; margin-top:2.5rem;">The mission is always:</p>
-      <div class="mission-grid reveal">
+      <div class="mission-grid reveal stagger">
         <div class="mission-card">
           <span class="mission-num">01</span>
           <h3>Inward first</h3>
@@ -129,6 +152,7 @@
 
   <!-- MANDATE / FOUR VERBS -->
   <section class="section section-cream" id="mandate">
+    <div class="blob blob-orange" data-parallax="0.05" style="top:-4%; right:8%; width:200px; height:200px;"></div>
     <div class="wrap">
       <p class="kicker reveal">The Mandate</p>
       <h2 class="section-title reveal">The four verbs</h2>
@@ -136,13 +160,14 @@
     </div>
 
     <div class="verb" data-verb="create">
+      <div class="blob blob-blossom" data-parallax="0.05" style="top:6%; left:2%; width:180px; height:180px;"></div>
       <div class="wrap verb-inner">
         <div class="verb-head reveal">
           <span class="verb-tag verb-tag-purple">1 &nbsp;/&nbsp; Create</span>
           <h3 class="verb-title">Bringing into existence what was not there</h3>
           <p>To create is to act as a co labourer with God, forming culture, building environments, writing new stories over the family line. Creation demands courage, because it requires action before there is evidence.</p>
         </div>
-        <ul class="verb-list reveal">
+        <ul class="verb-list reveal stagger">
           <li>Spiritual culture in the home: prayer rhythms, biblical literacy, prophetic identity</li>
           <li>Safe emotional environments where people can become</li>
           <li>Financial foundations where none existed: the first generation to own, to invest, to leave an inheritance</li>
@@ -156,13 +181,14 @@
     </div>
 
     <div class="verb verb-alt" data-verb="nourish">
+      <div class="blob blob-orange" data-parallax="0.06" style="top:8%; right:4%; width:200px; height:200px;"></div>
       <div class="wrap verb-inner">
         <div class="verb-head reveal">
           <span class="verb-tag verb-tag-orange">2 &nbsp;/&nbsp; Nourish</span>
           <h3 class="verb-title">Feeding consistently what is alive and growing</h3>
           <p>Nourishing is not a one time act. It is the long obedience of consistent provision, ensuring that what has been planted is watered, what is alive is fed, and no one in the family line goes hungry in any dimension.</p>
         </div>
-        <ul class="verb-list reveal">
+        <ul class="verb-list reveal stagger">
           <li><strong>Spiritually:</strong> through intercession, discipleship, prophetic encouragement and impartation</li>
           <li><strong>Emotionally:</strong> through listening deeply, affirming identity, and creating space for every person to be fully known</li>
           <li><strong>Intellectually:</strong> through wisdom transfer, mentorship, learning environments and honest conversation</li>
@@ -177,13 +203,14 @@
     </div>
 
     <div class="verb" data-verb="sustain">
+      <div class="blob blob-pink" data-parallax="0.05" style="top:4%; left:6%; width:190px; height:190px;"></div>
       <div class="wrap verb-inner">
         <div class="verb-head reveal">
           <span class="verb-tag verb-tag-magenta">3 &nbsp;/&nbsp; Sustain</span>
           <h3 class="verb-title">Holding up and maintaining what has been built through every season</h3>
           <p>Sustaining is the most costly and least celebrated of the four verbs. It requires showing up when there is no momentum, in grief seasons, dry seasons, opposition seasons. The sustainer does not abandon the family line when it is hard. They hold the rope.</p>
         </div>
-        <ul class="verb-list reveal">
+        <ul class="verb-list reveal stagger">
           <li>The prayer covering over the family: consistent, faithful, nonnegotiable</li>
           <li>The healing work: not just starting it, but walking it all the way through</li>
           <li>Marriages through difficult seasons: refusing to let them be abandoned without a fight</li>
@@ -197,13 +224,14 @@
     </div>
 
     <div class="verb verb-alt" data-verb="build">
+      <div class="blob blob-gold" data-parallax="0.06" style="top:6%; right:6%; width:210px; height:210px;"></div>
       <div class="wrap verb-inner">
         <div class="verb-head reveal">
           <span class="verb-tag verb-tag-purple">4 &nbsp;/&nbsp; Build</span>
           <h3 class="verb-title">Constructing systems, structures and legacies that function beyond the builder</h3>
           <p>Building is the most architectural of the four verbs. Where creating is about bringing something new into existence, building is about constructing it in a way that stands, that can be inhabited, handed over, expanded by the next generation and the one after that.</p>
         </div>
-        <ul class="verb-list reveal">
+        <ul class="verb-list reveal stagger">
           <li><strong>Family systems:</strong> decision making frameworks, conflict resolution processes, financial structures, inheritance plans</li>
           <li><strong>Spiritual systems:</strong> patterns of prayer, fasting, Bible engagement and corporate worship that the family can step into and sustain</li>
           <li><strong>Educational systems:</strong> libraries, learning cultures, mentorship pipelines, scholarship structures</li>
@@ -219,6 +247,8 @@
 
   <!-- TWELVE PILLARS -->
   <section class="section section-dark" id="pillars">
+    <div class="blob blob-pink" data-parallax="0.05" style="top:4%; left:6%; width:240px; height:240px;"></div>
+    <div class="blob blob-gold" data-parallax="0.08" style="bottom:4%; right:8%; width:220px; height:220px;"></div>
     <div class="wrap">
       <p class="kicker kicker-light reveal">The Twelve Pillars</p>
       <h2 class="section-title title-light reveal">One calling, twelve dimensions</h2>
@@ -233,13 +263,15 @@
 
   <!-- CARRIER OF THE CALLING -->
   <section class="section section-light" id="carrier">
+    <div class="blob blob-meadow" data-parallax="0.05" style="top:-6%; right:10%; width:220px; height:220px;"></div>
+    <div class="blob blob-orange" data-parallax="0.08" style="bottom:-8%; left:4%; width:200px; height:200px;"></div>
     <div class="wrap wrap-narrow">
       <p class="kicker reveal">The Carrier of the Calling</p>
       <h2 class="section-title reveal">Before the family is fed, the carrier must be fed</h2>
       <div class="lede reveal">
         <p>This is not selfishness. It is stewardship. A dry well cannot give water. A bankrupt treasury cannot fund a Kingdom. The person who carries this calling must build into their own life the very rhythms they are creating for the family line:</p>
       </div>
-      <ul class="check-list check-list-dark reveal">
+      <ul class="check-list check-list-dark reveal stagger">
         <li>A personal prayer life that is full, not performing</li>
         <li>Emotional health: processed wounds, honest relationships, space to be human</li>
         <li>Physical care: rest, food, rhythm, the refusal to run on empty</li>
@@ -264,6 +296,7 @@
   <!-- DECLARATION -->
   <section class="section section-declaration" id="declaration">
     <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+    <div class="blob blob-gold" data-parallax="0.05" style="top:8%; right:8%; width:200px; height:200px;"></div>
     <div class="wrap wrap-narrow reveal">
       <p class="kicker kicker-light">A Declaration</p>
       <p class="declaration-note">To be spoken over the family line</p>
@@ -286,6 +319,9 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
+    <div class="bubble-cluster bubble-cluster-footer" aria-hidden="true">
+      <i class="b-gold"></i><i class="b-orange"></i><i class="b-pink"></i><i class="b-blossom"></i><i class="b-meadow"></i>
+    </div>
     <span class="brand brand-footer">
       <span class="brand-dots" aria-hidden="true"><i></i><i></i><i></i></span>
       CLANOR
