@@ -1189,6 +1189,111 @@ p { line-height: 1.7; margin: 0 0 1rem; }
   border-radius: var(--radius);
 }
 
+/* ---------- Newsletter ---------- */
+
+.newsletter-form {
+  margin-top: 2.4rem;
+  max-width: 480px;
+}
+
+.newsletter-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange-300);
+  margin-bottom: 0.6rem;
+}
+
+.newsletter-form-row {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.newsletter-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0.9rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.08);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.newsletter-input::placeholder { color: rgba(255,255,255,0.45); }
+.newsletter-input:disabled { cursor: not-allowed; opacity: 0.7; }
+
+.newsletter-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+  animation: none;
+  transform: none;
+  box-shadow: none;
+}
+
+.newsletter-submit:disabled:hover { transform: none; box-shadow: none; }
+
+.newsletter-note {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+}
+
+.email-preview {
+  margin-top: 2rem;
+  background: var(--white);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 24px 50px -24px rgba(43,18,64,0.35);
+  border: 1px solid rgba(43,18,64,0.08);
+}
+
+.email-preview-chrome {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.9rem 1.2rem;
+  background: rgba(43,18,64,0.04);
+  border-bottom: 1px solid rgba(43,18,64,0.08);
+}
+
+.email-preview-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: rgba(43,18,64,0.15);
+}
+
+.email-preview-meta {
+  padding: 1.1rem 1.6rem;
+  border-bottom: 1px solid rgba(43,18,64,0.08);
+}
+
+.email-preview-meta p {
+  font-size: 0.88rem;
+  color: var(--ink-700);
+  margin: 0.2rem 0;
+}
+
+.email-preview-meta strong { color: var(--purple-800); }
+
+.email-preview-body { padding: 1.6rem; }
+
+.email-preview-body p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink-900);
+  margin-bottom: 1.2rem;
+}
+
+.email-preview-action {
+  padding: 1rem 1.2rem;
+  background: rgba(233,30,128,0.06);
+  border-left: 3px solid var(--magenta-500);
+  border-radius: 0 10px 10px 0;
+}
+
 /* ---------- Assessment ---------- */
 
 .assessment-hero { padding-bottom: 6rem; }
