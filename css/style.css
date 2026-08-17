@@ -1015,6 +1015,14 @@ p { line-height: 1.7; margin: 0 0 1rem; }
   gap: 0.7rem;
 }
 
+.filter-group-nested {
+  margin-left: 1.6rem;
+  padding-left: 1.1rem;
+  border-left: 2px solid rgba(233,30,128,0.25);
+}
+
+.filter-group-nested .filter-group-label { color: var(--magenta-500); }
+
 .filter-group-label {
   font-size: 0.78rem;
   font-weight: 800;
@@ -1084,6 +1092,7 @@ p { line-height: 1.7; margin: 0 0 1rem; }
 
 .resource-tag-pillar { background: rgba(43,18,64,0.08); color: var(--purple-700); }
 .resource-tag-audience { background: rgba(43,18,64,0.05); color: var(--ink-700); }
+.resource-tag-age { background: rgba(233,30,128,0.1); color: var(--magenta-500); }
 
 .resource-tag-phase { color: var(--white); }
 .resource-tag-phase-create { background: var(--orange-500); }
@@ -1348,6 +1357,7 @@ p { line-height: 1.7; margin: 0 0 1rem; }
   .subcategory-grid { grid-template-columns: 1fr 1fr; }
   .resource-grid { grid-template-columns: 1fr 1fr; }
   .filter-group { align-items: flex-start; flex-direction: column; gap: 0.6rem; }
+  .filter-group-nested { margin-left: 0.6rem; }
   .assessment-results-grid { grid-template-columns: 1fr 1fr; }
 }
 

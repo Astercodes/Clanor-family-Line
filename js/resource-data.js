@@ -8,7 +8,13 @@ const RESOURCES = [
     "phase": "nourish",
     "audience": [
       "individual",
-      "single"
+      "single",
+      "child"
+    ],
+    "ageGroups": [
+      "tween",
+      "teen",
+      "youth"
     ],
     "link": "pillars/mental-intellectual.html#resource-study-software"
   },
@@ -20,7 +26,13 @@ const RESOURCES = [
     "phase": "build",
     "audience": [
       "individual",
-      "parent"
+      "parent",
+      "child"
+    ],
+    "ageGroups": [
+      "tween",
+      "teen",
+      "youth"
     ],
     "link": "pillars/mental-intellectual.html#resource-academic-software"
   },
@@ -31,7 +43,12 @@ const RESOURCES = [
     "pillarSlug": "mental-intellectual",
     "phase": "create",
     "audience": [
-      "individual"
+      "individual",
+      "child"
+    ],
+    "ageGroups": [
+      "teen",
+      "youth"
     ],
     "link": "pillars/mental-intellectual.html#resource-intelligence-development-software"
   },
@@ -45,6 +62,7 @@ const RESOURCES = [
       "parent",
       "couple"
     ],
+    "ageGroups": [],
     "link": "pillars/community-connection.html#resource-family-software"
   },
   {
@@ -56,6 +74,7 @@ const RESOURCES = [
     "audience": [
       "parent"
     ],
+    "ageGroups": [],
     "link": "pillars/community-connection.html#resource-parenting-management-software"
   },
   {
@@ -69,6 +88,7 @@ const RESOURCES = [
       "couple",
       "parent"
     ],
+    "ageGroups": [],
     "link": "pillars/community-connection.html#resource-communication-software"
   },
   {
@@ -81,6 +101,7 @@ const RESOURCES = [
       "individual",
       "single"
     ],
+    "ageGroups": [],
     "link": "pillars/career-vocation.html#resource-career-software"
   },
   {
@@ -92,6 +113,7 @@ const RESOURCES = [
     "audience": [
       "couple"
     ],
+    "ageGroups": [],
     "link": "pillars/marriage.html#resource-marriage-management-software"
   },
   {
@@ -103,6 +125,7 @@ const RESOURCES = [
     "audience": [
       "single"
     ],
+    "ageGroups": [],
     "link": "pillars/relationships.html#resource-dating-courtship-software"
   },
   {
@@ -115,6 +138,7 @@ const RESOURCES = [
       "individual",
       "single"
     ],
+    "ageGroups": [],
     "link": "pillars/relationships.html#resource-social-circle-software"
   }
 ];
