@@ -1105,6 +1105,77 @@ p { line-height: 1.7; margin: 0 0 1rem; }
   font-size: 0.85rem;
 }
 
+/* ---------- Blog / Teaching Hub ---------- */
+
+.post-type {
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  color: var(--white);
+}
+
+.post-type-deep-dive { background: var(--purple-600); }
+.post-type-reflection { background: var(--orange-500); }
+.post-type-case-study { background: var(--magenta-500); }
+
+.post-card { text-decoration: none; }
+.post-card:hover { transform: translateY(-5px); box-shadow: 0 20px 42px -16px rgba(233,30,128,0.3), 0 10px 24px -12px rgba(240,120,46,0.25); }
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1.4rem 0 1.1rem;
+}
+
+.post-meta-pillar, .post-meta-time {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.6);
+}
+
+.post-body {
+  max-width: 68ch;
+  margin-top: 1rem;
+}
+
+.post-body p {
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: var(--ink-900);
+  margin-bottom: 1.4rem;
+}
+
+.post-cta {
+  margin-top: 3rem;
+  padding: 1.8rem;
+  background: rgba(43,18,64,0.03);
+  border: 1px solid rgba(43,18,64,0.08);
+  border-radius: var(--radius);
+}
+
+.post-cta p {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--purple-800);
+  margin: 0 0 1.2rem;
+}
+
+.post-cta-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.post-cta-links .download-btn {
+  flex: 1 1 220px;
+  background: linear-gradient(120deg, var(--orange-500), var(--magenta-500));
+}
+
 .empty-state {
   margin-top: 2rem;
   padding: 2.5rem;
